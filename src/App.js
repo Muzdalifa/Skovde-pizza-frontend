@@ -4,7 +4,6 @@ import Order from './Order';
 import './App.css'
 
 const App = () => {
-  //const [orders,setOrders] = useState(data);
   return (
     <section className='orderList'>
       {data.map((order)=>{

@@ -4,7 +4,8 @@ import './Order.css'
 const Order = (props)=>{
   return (
   <div className='order'>
-    < img src={props.pizza}/>
+    < img src={props.pizza_image}/>
+    <h3>{props.pizza_name}</h3>
   </div>
   )
 };
