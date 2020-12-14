@@ -1,7 +1,10 @@
 .lefNav {
-  width: 16%;
+  width: 20%;
   background-color: rgb(201, 224, 217);
 }
 .navLink {
   cursor: pointer;
+}
+.selectedItem {
+  color: #eb7311;
 }

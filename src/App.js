@@ -8,22 +8,17 @@ import './App.css'
 
 
 const App = () => {
-  const [pizza,setPizza] = useState(data)
   return (
     <div className='container'>
       <header>
         <h3>Skövde Pizza</h3>
       </header>
       <div className='middleContent'>
-        <Menu></Menu>
+        <Menu data={data} />
         <section className='orderList'>      
-          {pizza.map((order)=>{
-            return (
-                <Order key={order.pizzaId} {...order} />
-          )
-        })}
+          
         </section>
-        <Details></Details>
+        <Details />
       </div>
       <footer>
         Skövde Pizza
