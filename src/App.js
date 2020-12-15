@@ -13,12 +13,20 @@ const App = () => {
   const [orderdItems,setOrderdItems] = useState([]);
 
   const addOrderdItem=(item)=>{
-    orderdItems.push(item)
+    orderdItems.push(item);
+    setOrderdItems([...orderdItems]);
+  }
+
+  const removeOrderdItem=(item)=>{
+    const itemIndex = orderdItems.findIndex((x)=>x.id===item.id)
+    orderdItems.splice(itemIndex,1)
     setOrderdItems([...orderdItems])
   }
 
-  const detailsProps = { selectedItem, addOrderdItem }
   const menuProps = { data, selectedItem, setSelectedItem }
+  const detailsProps = { selectedItem, addOrderdItem }
+  const orderdItemsProps = {orderdItems,setOrderdItems,removeOrderdItem}
+
   return (
     <div className='container'>
       <header>
@@ -27,7 +35,7 @@ const App = () => {
       <div className='middleContent'>
         <Menu { ...menuProps}   />
         <Details className='orderList' {...detailsProps}  />
-        <OrderdItem />
+        <OrderdItem {...orderdItemsProps}/>
       </div>
       <footer>
         Skövde Pizza
