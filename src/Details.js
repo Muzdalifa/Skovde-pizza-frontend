@@ -11,7 +11,7 @@ const Details = (props)=>{
             <img src={props.selectedItem.image} />
             <label>Pizza name: {props.selectedItem.name}</label>
             <label>Cost: {props.selectedItem.cost}</label>
-            <button onClick>Add</button>
+            <button onClick={()=>props.addOrderdItem(props.selectedItem)}>Add</button>
           </div>
         : null
       } 
