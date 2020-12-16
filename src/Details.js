@@ -8,12 +8,15 @@ const Details = (props)=>{
       <div className='details'>
         {
           props.selectedItem.id !== ''
-          ? <div>
-              <img src={props.selectedItem.image} />
-              <label>Pizza name: {props.selectedItem.name}</label>
-              <label>Cost: {props.selectedItem.cost}</label>
-              <button onClick={()=>props.addOrderdItem(props.selectedItem)}>Add</button>
-            </div>
+          ? 
+          <>
+            <div>
+                <img src={props.selectedItem.image} />
+                <label>Pizza name: {props.selectedItem.name}</label>
+                <label>Cost: {props.selectedItem.cost}</label>
+                <button onClick={()=>props.addOrderdItem(props.selectedItem)}>Add</button>
+              </div>
+            </>
           : null
         } 
       </div>
@@ -21,9 +24,11 @@ const Details = (props)=>{
       <div className='rekommendation'>        
         {
           rekommendation_data.map(
-            (item)=> <div>
+            (item)=> <div className="recommendedItem">
               <img className='rekommendImage' src={item.image} />
-              <p>{item.type}</p>
+              <p>{item.name}</p>
+              <p>{item.cost}</p>
+              <button className='AddRekommendationBtn' onClick={()=>props.addOrderdItem(item)}>+</button>
             </div>
           )
         }
