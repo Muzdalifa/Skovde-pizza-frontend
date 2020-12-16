@@ -12,10 +12,20 @@
 img {
   height: 16rem;
 }
-.rekommendation {
+/* .rekommendation {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: column;
+} */
 .rekommendImage {
   height: 6rem;
+}
+
+.recommendedItem {
+  display: inline-block;
+}
+.AddRekommendationBtn {
+  font-weight: 20rem;
+  font-size: initial;
+  font-weight: 800;
+  color: currentcolor;
 }
