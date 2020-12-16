@@ -34,7 +34,7 @@ const App = () => {
       </header>
       <div className='middleContent'>
         <Menu { ...menuProps}   />
-        <Details className='orderList' {...detailsProps}  />
+        <Details {...detailsProps}  />
         <OrderdItem {...orderdItemsProps}/>
       </div>
       <footer>

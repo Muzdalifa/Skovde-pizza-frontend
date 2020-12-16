@@ -15,20 +15,9 @@ header h3 {
 .middleContent {
   display: flex;
 }
-.orderList {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 4rem auto;
-  display: grid;
-  gap: 2rem;
-}
 
-@media screen and (min-width: 768px) {
-  .orderList {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-  }
-}
+/* @media screen and (min-width: 768px) {
+} */
 footer {
-  background-color:  rgb(65, 161, 128);
+  background-color: rgb(65, 161, 128);
 }

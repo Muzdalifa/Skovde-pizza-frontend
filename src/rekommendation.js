@@ -1,9 +1,8 @@
 export default [
-{
   {
     id:1,
     type:'Soft drink',
-    image:'./asset/rekommendation/cocacola.jpeg',
+    image:'./asset/rekommendation/cocacola.jpg',
     cost:15,
   },
   {
@@ -14,19 +13,19 @@ export default [
   },
   {
     id:3,
-    type:,
+    type:'Soft drink',
     image:'./asset/rekommendation/pepsi.png',
     cost:25,
   },
   {
     id:4,
-    type:,
+    type:'Soft drink',
     image:'./asset/rekommendation/sprite.jpg',
     cost:15,
   },
   {
     id:5,
-    type:,
+    type:'Soft drink',
     image:'./asset/rekommendation/sprite2.jpg',
     cost:20,
   },
