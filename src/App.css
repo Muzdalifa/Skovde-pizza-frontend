@@ -1,24 +1,9 @@
-header {
-  height: 8rem;
-  background-color: rgb(117, 163, 148);
-  font-size: 4rem;
-  font-weight: bold;
-  padding: 0rem;
-  margin: 0rem;
-  position: sticky;
-  top: 0;
-}
-header h3 {
-  padding-left: 8rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.middleContent {
+
+.main {
   display: flex;
 }
 
 /* @media screen and (min-width: 768px) {
-  
+
 } */
-footer {
-  background-color: rgb(65, 161, 128);
-}
+

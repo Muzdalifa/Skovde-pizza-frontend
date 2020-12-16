@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import data from './data';
 import Menu from './Menu';
-import Header from './Header'
-import OrderdItem from './OrderdItem'
+import Header from './Header';
+import OrderdItem from './OrderdItem';
 import Details from './Details';
 import './App.css'
+import Footer from './Footer';
 
 
 const App = () => {
@@ -29,17 +30,13 @@ const App = () => {
 
   return (
     <div className='container'>
-      <header>
-        <h3>Skövde Pizza</h3>
-      </header>
-      <div className='middleContent'>
+      < Header/>
+      <div className='main'>
         <Menu { ...menuProps}   />
         <Details {...detailsProps}  />
         <OrderdItem {...orderdItemsProps}/>
       </div>
-      <footer>
-        Skövde Pizza
-      </footer> 
+      <Footer/>
     </div>
   )
   }
