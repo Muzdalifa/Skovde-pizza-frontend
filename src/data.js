@@ -3,7 +3,7 @@ export default[
     id:1,
     image: './asset/bacon_tomato.png',
     name: 'Bacon tomato',
-    cost: 120
+    cost: 120,
   },
   {
     id:2,

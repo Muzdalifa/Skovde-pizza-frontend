@@ -1,0 +1,39 @@
+export default [
+{
+  {
+    id:1,
+    type:'Soft drink',
+    image:'./asset/rekommendation/cocacola.jpeg',
+    cost:15,
+  },
+  {
+    id:2,
+    type:'Soft drink',
+    image:'./asset/rekommendation/crush_orange.jpeg',
+    cost:20,
+  },
+  {
+    id:3,
+    type:,
+    image:'./asset/rekommendation/pepsi.png',
+    cost:25,
+  },
+  {
+    id:4,
+    type:,
+    image:'./asset/rekommendation/sprite.jpg',
+    cost:15,
+  },
+  {
+    id:5,
+    type:,
+    image:'./asset/rekommendation/sprite2.jpg',
+    cost:20,
+  },
+  {
+    id:6,
+    type:'toppen',
+    image:'./asset/rekommendation/pommes.jpg',
+    cost:30,
+  }  
+]
