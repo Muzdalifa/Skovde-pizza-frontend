@@ -26,7 +26,7 @@ export default[
    {
     id:5,
     image: './asset/OIP.jpg',
-    name: 'OIP',
+    name: 'Mashoom',
     cost: 85
   },
    {
@@ -50,7 +50,7 @@ export default[
     {
     id:9,
     image: './asset/OIP_mix.jpg',
-    name:'OIP mix',
+    name:'Mashroom and salami',
     cost:80
   }
 ];
