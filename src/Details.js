@@ -1,6 +1,7 @@
 import React from 'react';
-import './Details.css'
 import rekommendation_data from './rekommendation'
+import './Details.css'
+
 const Details = (props)=>{
   const rekommendation = rekommendation_data;
   return (

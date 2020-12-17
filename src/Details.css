@@ -12,14 +12,9 @@
 img {
   height: 16rem;
 }
-/* .rekommendation {
-  display: flex;
-  flex-direction: column;
-} */
 .rekommendImage {
   height: 6rem;
 }
-
 .recommendedItem {
   display: inline-block;
 }
