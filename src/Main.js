@@ -10,8 +10,17 @@ const Main = ()=>{
   const [orderdItems,setOrderdItems] = useState([]);
 
   const addOrderdItem=(item)=>{
-    orderdItems.push(item);
+    //check if exist
+    const index = orderdItems.findIndex((x)=>x.item.id===item.id)
+    if(index ==-1){ //if false create new and initialize count to 1
+      const newOrderedItemInfo = {item, count: 1};
+      orderdItems.push(newOrderedItemInfo);
+    } else{ //else increment the count
+      orderdItems[index].count = orderdItems[index].count + 1
+    }
+    //Add item
     setOrderdItems([...orderdItems]);
+
   }
 
   const removeOrderdItem=(item)=>{

@@ -1,4 +1,29 @@
 .rightNav {
   width: 30%;
-  background-color: rgb(201, 224, 217);
+  background-color: cadetblue;
+  padding: 1rem;
+  color: white;
+}
+.rightNavUp {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 1rem;
+  margin: 0rem;
+  border-bottom: solid;
+  border-bottom-color: black;
+  background-color: cadetblue;
+}
+.labelbtn {
+  border: none;
+  font-size: 1.4em;
+  background-color: cadetblue;
+  color: white;
+  margin: 1rem;
+  cursor: pointer;
+}
+.countItem {
+  border: solid 1px;
+  padding: 1rem;
+}
+. .rightNavDown {
 }
