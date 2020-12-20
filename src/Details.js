@@ -6,21 +6,17 @@ const Details = (props)=>{
   const rekommendation = rekommendation_data;
   return (
     <div className='orderList'>
-      <div className='details'>
-        {
-          props.selectedItem.id !== ''
-          ? 
-          <>
-            <div>
-                <img src={props.selectedItem.image} />
-                <label>Pizza name: {props.selectedItem.name}</label>
-                <label>Cost: {props.selectedItem.cost}</label>
-                <button onClick={()=>props.addOrderdItem(props.selectedItem)}>Add</button>
-              </div>
-            </>
-          : null
-        } 
-      </div>
+      {
+        props.selectedItem.id !== ''
+        ? 
+          <div className='details'>
+            <img src={props.selectedItem.image} />
+            <label>Pizza name: {props.selectedItem.name}</label>
+            <label>Cost: {props.selectedItem.cost}</label>
+            <button onClick={()=>props.addOrderdItem(props.selectedItem) } className='addOrderBtn'>Add</button>
+        </div>
+        : null
+      } 
       <p>Recommendations</p>
       <div className='rekommendation'>        
         {

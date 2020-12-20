@@ -1,6 +1,10 @@
 .lefNav {
-  width: 20%;
+  width: 16%;
   background-color: rgb(201, 224, 217);
+  /* background-color: rgb(87, 137, 139); */
+  /* color: white; */
+  padding: 1rem;
+  text-align: justify;
 }
 .navLink {
   cursor: pointer;

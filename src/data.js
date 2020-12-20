@@ -14,7 +14,7 @@ export default[
    {
     id:3,
     image: './asset/salami_bacon_paper.jpg',
-    name: 'salami bacon paper',
+    name: 'Salami bacon paper',
     cost: 99
   },
    {
