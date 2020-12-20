@@ -7,7 +7,7 @@ import Details from './Details';
 
 const Main = ()=>{
   const [selectedItem, setSelectedItem] = useState({id: '',image:'',name:'', Time:''});
-  const [orderdItems,setOrderdItems] = useState([]);
+  const [orderdItems,setOrderdItems] = useState([]); //its array of object(item, count)
 
   const addOrderdItem=(item)=>{
     //check if exist
@@ -23,15 +23,24 @@ const Main = ()=>{
 
   }
 
-  const removeOrderdItem=(item)=>{
-    const itemIndex = orderdItems.findIndex((x)=>x.id===item.id)
-    orderdItems.splice(itemIndex,1)
-    setOrderdItems([...orderdItems])
+  const removeOrderdItem=(item,removeAll)=>{
+    const itemIndex = orderdItems.findIndex((x)=>x.item.id===item.id)
+    if(itemIndex !==-1){
+
+      if(orderdItems[itemIndex].count ===1  || removeAll){
+        orderdItems.splice(itemIndex,1)
+      }else{
+        orderdItems[itemIndex].count = orderdItems[itemIndex].count -1
+      }
+      
+      setOrderdItems([...orderdItems])
+    }
+    
   }
 
   const menuProps = { data, selectedItem, setSelectedItem }
   const detailsProps = { selectedItem, addOrderdItem }
-  const orderdItemsProps = {orderdItems,setOrderdItems,removeOrderdItem}
+  const orderdItemsProps = {orderdItems,setOrderdItems,removeOrderdItem,addOrderdItem}
   return <div className='main'>
         <Menu { ...menuProps}   />
         <Details {...detailsProps}  />

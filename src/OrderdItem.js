@@ -13,8 +13,10 @@ const OrderdItem = (props)=>{
         (orderItemInfo,index)=><div key={index} className='rightNavUp' >
           <label>{orderItemInfo.item.name}</label>
           <label>å{orderItemInfo.item.cost}</label>
-          <label >-</label><label >{orderItemInfo.count}</label><label >+</label>
-          <button onClick={()=>props.removeOrderdItem(orderItemInfo.item)}>Remove</button>
+          <label onClick={()=>props.removeOrderdItem(orderItemInfo.item)}>-</label>
+          <label >{orderItemInfo.count}</label>
+          <label onClick={()=>props.addOrderdItem(orderItemInfo.item)}>+</label>
+          <button onClick={()=>props.removeOrderdItem(orderItemInfo.item, true)}>Remove</button>
         </div>              
       )
     }
