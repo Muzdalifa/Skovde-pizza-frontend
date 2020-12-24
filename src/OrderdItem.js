@@ -4,6 +4,7 @@ import './OrderdItem.css'
 const OrderdItem = (props)=>{
 //currentOrderdItemInfo: it's an object 
   const sum = (accumulator, currentOrderdItemInfo) =>{ 
+    
     return accumulator + currentOrderdItemInfo.item.cost * currentOrderdItemInfo.count
    } 
   console.log(props.orderdItems);
@@ -16,6 +17,7 @@ const OrderdItem = (props)=>{
           <label onClick={()=>props.removeOrderdItem(orderItemInfo.item)}>-</label>
           <label >{orderItemInfo.count}</label>
           <label onClick={()=>props.addOrderdItem(orderItemInfo.item)}>+</label>
+          <label>{orderItemInfo.item.cost*orderItemInfo.count}:-</label>
           <button onClick={()=>props.removeOrderdItem(orderItemInfo.item, true)}>Remove</button>
         </div>              
       )
