@@ -7,7 +7,7 @@ import Details from './Details';
 
 const Main = ()=>{
   const [selectedItem, setSelectedItem] = useState({id: '',image:'',name:'', Time:''});
-  const [orderdItems,setOrderdItems] = useState([]); //its array of object(item, count)
+  const [orderdItems, setOrderdItems] = useState([]); //array of object(item, count)
 
   const addOrderdItem=(item)=>{
     //check if exist

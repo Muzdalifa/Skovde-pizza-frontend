@@ -28,8 +28,10 @@ img {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: white;
-  background-color: rgb(117, 163, 148);
-  color: #4276a0;
+  /* background-color: rgb(117, 163, 148); */
+  /* color: #4276a0; */
+  background-color: rgb(8, 51, 53);
+  color:white;
   font-weight: bolder;
   font-size: 1rem;
 }
