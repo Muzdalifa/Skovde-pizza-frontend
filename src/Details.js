@@ -17,7 +17,7 @@ const Details = (props)=>{
         </div>
         : null
       } 
-      <p>Recommendations</p>
+      <h2>Recommendations</h2>
       <div className='rekommendation'>        
         {
           rekommendation_data.map(

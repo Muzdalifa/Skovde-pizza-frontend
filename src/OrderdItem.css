@@ -7,29 +7,17 @@
 .rightNavUp {
   display: grid;
   grid-column-gap: 25px;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
   padding: 1rem;
   margin: 0rem;
 }
-/* div > .rightNavUp:last-child {
-  border-bottom: solid;
-  border-bottom-color: black;
-} */
+
 .rightNavTotalPayment {
-  display: grid;
-  grid-column-gap: 25px;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 1rem;
-  margin: 0rem;
+  border-top: solid 1px;
   font-weight: bold;
   font-size: 1.2rem;
 }
-.labelTotal {
-  grid-column: 1 / span 4;
-}
-.total {
-  grid-column: 5 / span 2;
-}
+
 
 .labelbtn {
   cursor: pointer;
@@ -60,4 +48,10 @@
   width: 1.1rem;
   border: whitesmoke;
   cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+}
+.numericCell{
+text-align: end;
 }
