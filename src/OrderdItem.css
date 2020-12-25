@@ -6,24 +6,58 @@
 }
 .rightNavUp {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-column-gap: 25px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
   padding: 1rem;
   margin: 0rem;
+}
+/* div > .rightNavUp:last-child {
   border-bottom: solid;
   border-bottom-color: black;
-  background-color: cadetblue;
+} */
+.rightNavTotalPayment {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  margin: 0rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
+.labelTotal {
+  grid-column: 1 / span 4;
+}
+.total {
+  grid-column: 5 / span 2;
+}
+
 .labelbtn {
-  border: none;
-  font-size: 1.4em;
-  background-color: cadetblue;
-  color: white;
-  margin: 1rem;
   cursor: pointer;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.labelbtn:hover {
+  color: #eb7311;
+  /* font-size: 2rem; */
+  font-weight: bold;
+  padding: 0.4rem;
 }
 .countItem {
   border: solid 1px;
-  padding: 1rem;
+  padding: 0.2rem 0.4rem;
 }
-.rightNavDown {
+
+.rightNav > h2 {
+  text-align: center;
+}
+.orderCount {
+  padding: 1;
+}
+
+.orderItemRemoveBtn {
+  height: 1.1rem;
+  width: 1.1rem;
+  border: whitesmoke;
+  cursor: pointer;
 }
