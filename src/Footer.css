@@ -1,5 +1,14 @@
 footer {
-  background-color: rgb(65, 161, 128);
-  opacity: 1;
+  background-color: rgb(17, 93, 95);
+  color: white !important;
   margin: 1rem;
+}
+a:active {
+  color: white;
+}
+a:hover {
+  color: #eb7311;
+}
+a:visited {
+  color: bisque;
 }
