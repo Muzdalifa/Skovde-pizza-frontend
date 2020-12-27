@@ -2,13 +2,30 @@ header {
   height: 8rem;
   background-color: rgb(17, 93, 95);
   color: white;
-  font-size: 4rem;
-  font-weight: bold;
   padding: 0rem;
+
   margin: 1rem;
   position: relative;
+  /* display: grid;
+  grid-template-columns: 40% auto; */
+}
+header h3 {
 }
 
-header h3 {
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
   padding-left: 8rem;
+}
+.nav {
+  padding-top: 1.2rem;
+  font-size: 1.6rem;
+  display: flex;
+  place-content: flex-end;
+  background-color: #ff6347de;
+  background-clip: content-box;
+  gap: 25px;
+}
+.nav > a:hover {
+  color: rgb(17, 93, 95);
 }
