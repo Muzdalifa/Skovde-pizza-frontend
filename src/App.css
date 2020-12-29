@@ -1,9 +1,3 @@
-.header {
-  height: 10%;
-}
-.main {
-  height: 85%;
-}
-.footer {
-  height: 5%;
+.app-container {
+  margin: 0rem 8rem;
 }

@@ -9,7 +9,7 @@ const OrderdItem = (props)=>{
    } 
  
   return <div className='rightNav'>
-    <h2>Köpta produkter</h2>
+    <h4>Köpta produkter</h4>
     {
       props.orderdItems.map(
         (orderItemInfo,index)=><div key={index} className='rightNavUp'>

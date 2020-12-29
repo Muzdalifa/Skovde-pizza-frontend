@@ -33,13 +33,13 @@ export default[
     id:105,
     image: './asset/shrimp.jpg',
     name:'Shrimp',
-    Time: 100
+    cost: 90
   },
    {
     id:106,
     image: './asset/pizza_2in_1.jpg',
     name:'Pizza two in one',
-    cost:'80'
+    cost:80
   },
    {
     id:107,

@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  color: #4276a0;
+  color: rgb(17, 93, 95);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 0rem 8rem;
 }

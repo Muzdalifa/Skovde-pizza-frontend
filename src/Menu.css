@@ -1,17 +1,23 @@
 .lefNav {
-  width: 20%;
-  /* background-color: rgb(201, 224, 217); */
+  width: 25%;
   background-color: rgb(87, 137, 139);
   color: white;
   padding: 1rem;
   text-align: justify;
-  font-size: 1.4em;
-  letter-spacing: 0.01em;
-  line-height: 1.8;
 }
 .navLink {
   cursor: pointer;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 .selectedItem {
-  color: #eb7311;
+  /* color: #eb7311; */
+  color: #f3c9a7;
+}
+h4 {
+  text-align: center;
+  font-size: 1.4em;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
 }

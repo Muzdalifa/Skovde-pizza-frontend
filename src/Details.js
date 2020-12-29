@@ -12,11 +12,11 @@ const Details = (props)=>{
           <>
             <div className='details'>
               <img src={props.selectedItem.image} />
-              <label>Pizza name: {props.selectedItem.name}</label>
-              <label>Cost: {props.selectedItem.cost}</label>
+              <label>{props.selectedItem.name}</label>
+              <label>{props.selectedItem.cost}:-</label>
               <button onClick={()=>props.addOrderdItem(props.selectedItem) } className='addOrderBtn'>Add</button>
             </div>
-            <h2>Recommendations</h2>
+            <div className='recTitle'>Tillval</div >
             <div className='rekommendation'>        
               {
                 rekommendation_data.map(

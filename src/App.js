@@ -5,13 +5,14 @@ import Footer from './Footer';
 import './App.css'
 
 
+
 const App = () => {
 
   return (
-    <div>
-      <Header class='header'/>
-      <Main class='main' />
-      <Footer class='footer'/>
+    <div className='app-container'>
+      <Header />
+      <Main />
+      <Footer/>
     </div>
   )
   }
