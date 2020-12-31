@@ -1,7 +1,7 @@
 .rightNav {
   width: 30%;
-  background-color: cadetblue;
-  color: white;
+  background-color: #f5e2ce7a;
+  color: rgb(17, 93, 95);
   padding: 1rem;
   padding-top: 0.2rem;
 }
@@ -43,8 +43,8 @@
 .orderItemRemoveBtn {
   height: 1.1rem;
   width: 1.1rem;
-  background-color: white;
-  color: teal;
+  background-color: rgb(17, 93, 95);
+  color: white;
   font-weight: 700;
   border: white;
   cursor: pointer;
@@ -66,8 +66,8 @@
 }
 .buyBtn {
   height: 1.8rem;
-  background-color: white;
-  color: teal;
+  background-color: rgb(17, 93, 95);
+  color: white;
   font-weight: 700;
   border: white;
 }
