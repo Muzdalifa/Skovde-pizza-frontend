@@ -31,7 +31,8 @@ const OrderdItem = (props)=>{
     {
       (props.orderdItems.length === 0)
       ? <div>Varukorgen är tom</div>
-      : <div key={-1} className='rightNavUp rightNavTotalPayment'>
+      : <>
+        <div key={-1} className='rightNavUp rightNavTotalPayment'>
           <label>Att betala:</label>
           <label className='hidden'>å67</label>
           <div className='orderCount hidden' >
@@ -42,7 +43,13 @@ const OrderdItem = (props)=>{
           <label className='numericCell'>{props.orderdItems.reduce(sum,0)}:-</label>
           <button className='orderItemRemoveBtn hidden' >X</button>
         </div> 
+        <div className='rightNavDown'>
+          <p>Bästalla nummber: 123456</p>
+        <button className='buyBtn'>Handla</button>
+        </div> 
+      </>
     }
+    
   </div>
 }
 export default OrderdItem

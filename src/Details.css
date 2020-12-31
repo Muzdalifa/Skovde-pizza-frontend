@@ -13,9 +13,14 @@
 /*pizza div  */
 .details {
   display: grid;
-  padding: 1rem 2rem 2rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+}
+.imageImfo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 img {
   height: 16rem;
@@ -33,11 +38,16 @@ img {
 }
 .addOrderBtn:hover {
   /* background-color: rgb(142, 193, 230); */
+  cursor: pointer;
   background-color: rgb(17, 93, 95);
   color: white;
   border: white;
-  /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.information {
+  padding: 4rem 1rem 1rem 2rem;
 }
 .recTitle {
   padding: 1rem 2rem 0rem 1rem;
@@ -54,12 +64,10 @@ img {
   padding: 0.5rem;
   font-size: small;
 }
-
 .rekommendImage {
   height: 4rem;
   width: 4rem;
 }
-
 .AddRekommendationBtn {
   font-weight: 20rem;
   font-size: initial;
@@ -70,6 +78,7 @@ img {
   border: whitesmoke;
 }
 .AddRekommendationBtn:hover {
+  cursor: pointer;
   background-color: rgb(17, 93, 95);
   color: white;
   border: white;

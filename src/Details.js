@@ -11,7 +11,12 @@ const Details = (props)=>{
         ? 
           <>
             <div className='details'>
-              <img src={props.selectedItem.image} />
+              <div className='imageImfo'>
+                <img src={props.selectedItem.image} />
+                <p>Mozzarella, Fontina, Parmesan, Feta cheese, Mushrooms, Bell peppers,
+                   Italian pepperoncini, sausage, black olives, Chopped fresh basil. 
+                   Baby arugula, Pesto, Pepperoni, Onions or caramelized, Ham</p>
+                </div>
               <label>{props.selectedItem.name}</label>
               <label>{props.selectedItem.cost}:-</label>
               <button onClick={()=>props.addOrderdItem(props.selectedItem) } className='addOrderBtn'>Add</button>
