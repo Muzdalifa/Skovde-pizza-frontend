@@ -8,23 +8,23 @@ const OrderdItem = (props)=>{
     return accumulator + currentOrderdItemInfo.item.cost * currentOrderdItemInfo.count
    } 
  
-  return <div className='rightNav'>
+  return <div className='order-item-right-nav'>
     <h4>Köpta produkter</h4>
     {
       props.orderdItems.map(
-        (orderItemInfo,index)=><div key={index} className='rightNavUp'>
+        (orderItemInfo,index)=><div key={index} className='order-item-right-nav-up'>
           <label>{orderItemInfo.item.name}</label>
-          <label className='numericCell'>å{orderItemInfo.item.cost}</label>
-          <div className='orderCount'>
-          <label className='labelbtn' onClick={()=>props.removeOrderdItem(orderItemInfo.item)}>-</label>
-          <label className='countItem'>{orderItemInfo.count}</label>
-          <label className='labelbtn' onClick={()=>props.addOrderdItem(orderItemInfo.item)}
+          <label className='order-item-numericcell'>å{orderItemInfo.item.cost}</label>
+          <div className='order-item-order-count'>
+          <label className='order-item-labelbtn' onClick={()=>props.removeOrderdItem(orderItemInfo.item)}>-</label>
+          <label className='order-item-count-item'>{orderItemInfo.count}</label>
+          <label className='order-item-labelbtn' onClick={()=>props.addOrderdItem(orderItemInfo.item)}
             onMouseDown={(event)=>console.log('mouseDown',event.target.classList)}
             onMouseUp={(event)=>console.log('mouseUp',event.target)}
           >+</label>
           </div>
-          <label className='numericCell'>{orderItemInfo.item.cost*orderItemInfo.count}:-</label>
-          <button className='orderItemRemoveBtn' onClick={()=>props.removeOrderdItem(orderItemInfo.item, true)}>X</button>
+          <label className='order-item-numericcell'>{orderItemInfo.item.cost*orderItemInfo.count}:-</label>
+          <button className='order-item-removebtn' onClick={()=>props.removeOrderdItem(orderItemInfo.item, true)}>X</button>
         </div>              
       )
     }
@@ -32,20 +32,20 @@ const OrderdItem = (props)=>{
       (props.orderdItems.length === 0)
       ? <div>Varukorgen är tom</div>
       : <>
-        <div key={-1} className='rightNavUp rightNavTotalPayment'>
+        <div key={-1} className='order-item-right-nav-up order-item-right-nav-total-payment'>
           <label>Att betala:</label>
-          <label className='hidden'>å67</label>
-          <div className='orderCount hidden' >
-            <label className='labelbtn hidden'>-</label>
-            <label className='countItem hidden'></label>
-            <label className='labelbtn hidden'>+</label>
+          <label className='order-item-hidden'>å67</label>
+          <div className='order-item-order-count order-item-hidden' >
+            <label className='order-item-labelbtn order-item-hidden'>-</label>
+            <label className='order-item-count-item order-item-hidden'></label>
+            <label className='order-item-labelbtn order-item-hidden'>+</label>
           </div>
-          <label className='numericCell'>{props.orderdItems.reduce(sum,0)}:-</label>
-          <button className='orderItemRemoveBtn hidden' >X</button>
+          <label className='order-item-numericcell'>{props.orderdItems.reduce(sum,0)}:-</label>
+          <button className='order-item-removebtn order-item-hidden' >X</button>
         </div> 
-        <div className='rightNavDown'>
+        <div className='order-item-right-nav-down'>
           <p>Bästalla nummber: 123456</p>
-        <button className='buyBtn'>Handla</button>
+        <button className='order-item-buy-btn'>Handla</button>
         </div> 
       </>
     }

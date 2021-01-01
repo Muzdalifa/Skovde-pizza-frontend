@@ -41,7 +41,7 @@ const Main = ()=>{
   const menuProps = { data, selectedItem, setSelectedItem }
   const detailsProps = { selectedItem, addOrderdItem }
   const orderdItemsProps = {orderdItems,setOrderdItems,removeOrderdItem,addOrderdItem}
-  return <div className='main'>
+  return <div className='main-container'>
         <Menu { ...menuProps}   />
         <Details {...detailsProps}  />
         <OrderdItem {...orderdItemsProps}/>
