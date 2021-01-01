@@ -10,7 +10,7 @@ h3 {
   font-size: 4rem;
   padding-left: 1rem;
 }
-.nav {
+.header-nav {
   padding-right: 1rem;
   font-size: 1.6rem;
   display: flex;
@@ -18,6 +18,14 @@ h3 {
   background-color: #ff6347de;
   gap: 25px;
 }
-.nav > a:hover {
-  color: rgb(17, 93, 95);
+.header-link:visited {
+  color: inherit;
+}
+.header-link:hover {
+  color: bisque;
+  text-decoration: underline !important;
+}
+
+.header-link-active {
+  color: rgb(17, 93, 95) !important;
 }
