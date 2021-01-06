@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import './Main.css'
+import './Order.css'
 import data from './data';
 import Menu from './Menu';
 import OrderdItem from './OrderdItem';
 import Details from './Details';
 
-const Main = ()=>{
+const Order = ()=>{
   const [selectedItem, setSelectedItem] = useState({id: '',image:'',name:'', Time:''});
   const [orderdItems, setOrderdItems] = useState([]); //array of object(item, count)
 
@@ -47,4 +47,4 @@ const Main = ()=>{
         <OrderdItem {...orderdItemsProps}/>
       </div>
 }
-export default Main
+export default Order

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Main from './Main';
+import Order from './Order';
 import Footer from './Footer';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css'
@@ -8,7 +8,7 @@ import './App.css'
 // pages
 import Home from './Home'
 import Error from './Error'
-import AboutUs from './AboutUs'
+import Payment from './Payment'
 import Contact from './Contact'
 
 
@@ -25,11 +25,11 @@ const App = () => {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='/main'>
-          <Main />
+        <Route path='/order'>
+          <Order />
         </Route>
-        <Route path='/omoss'>
-          <AboutUs />
+        <Route path='/payment'>
+          <Payment />
         </Route>
         <Route path='/kontakt'>
           <Contact />
