@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import './OrderdItem.css'
+import './OrderdItem.css';
+import {useHistory} from 'react-router-dom';
+
 
 const OrderdItem = (props)=>{
 //currentOrderdItemInfo: it's an object 
+
+  const history = useHistory();
   const sum = (accumulator, currentOrderdItemInfo) =>{ 
     
     return accumulator + currentOrderdItemInfo.item.cost * currentOrderdItemInfo.count
    } 
+
+   const orderNum = 1000001;
  
   return <div className='order-item-right-nav'>
     <h4>Köpta produkter</h4>
@@ -44,8 +50,8 @@ const OrderdItem = (props)=>{
           <button className='order-item-removebtn order-item-hidden' >X</button>
         </div> 
         <div className='order-item-right-nav-down'>
-          <p>Bästalla nummber: 123456</p>
-        <button className='order-item-buy-btn'>Handla</button>
+          <p>Bästalla nummber: {orderNum}</p>
+        <button className='order-item-buy-btn' onClick={() => history.push('/payment', {cost:props.orderdItems.reduce(sum,0), orderNum, orderItems: props.orderdItems }) }>Handla</button>
         </div> 
       </>
     }
