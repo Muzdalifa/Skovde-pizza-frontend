@@ -26,3 +26,13 @@ form.form-container input[type="text"]:focus {
 }
 .payment-final-payments {
 }
+.payment-paybtn {
+  height: 2rem;
+  width: 12rem;
+  border: white;
+  background-color: rgb(17 93 95 / 70%);
+  color: white;
+  font-weight: bolder;
+  margin-top: 2rem;
+  font-size: 1rem;
+}

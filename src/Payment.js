@@ -2,6 +2,24 @@ import React from 'react';
 import './Payment.css'
 
 import { useLocation } from 'react-router';
+import { loadStripe } from '@stripe/stripe-js';
+
+//This is your test publishable API key.
+const stripePromise = loadStripe('pk_test_51I6bvkHTHUtbDw8mPtB00mwyaUd9vgLez02Sc7bbRZLYcLYKeGeH1z2Y8Qy0AKVndZuutOVBjOIp8eVhEc6cqGKA00GxO7hHfT');
+
+const checkout = async()=>{
+// Get Stripe.js instance
+const stripe = await stripePromise;
+// Call backend to create the Checkout Session
+const response = await fetch("https://localhost:44375/api/Payments",{method:"post"});
+
+const session = await response.json();
+// When the customer clicks on the button, redirect them to Checkout.
+const result = await stripe.redirectToCheckout(session);
+
+
+
+}
 
 const Payment = ()=>{
   const {state} = useLocation();
@@ -26,12 +44,9 @@ const Payment = ()=>{
             </div>              
           )
         }
-        <label className='order-item-numericcell'>Total betalning:{state.cost}:-</label>
+        <label className='order-item-numericcell'>Total betalning:{state.cost}:-</label><br />
+        <button className='payment-paybtn' id="checkout-button" onClick={checkout}>Betala</button>
       </div>
-    </div>
-
-    <div className='payment-final-payments'> 
-        <p>Betalningar</p>
     </div>
   </div>
 }
