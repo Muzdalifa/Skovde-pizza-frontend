@@ -9,17 +9,14 @@ const Header = ()=>{
     <h3>Skövde Pizza</h3>
     <div className='header-nav'>
       <div>
-          <Link className= {`header-link ${pathname==='/'? 'header-link-active':'' }`} to='/'  style={{ textDecoration: 'none' }}>Hem </Link>
+          <Link className= {`header-link ${pathname==='/'? 'header-link-active':'' }`} to='/' >Hem </Link>
         </div>
         <div>
-          <Link className={`header-link ${pathname==='/main'? 'header-link-active':'' }`} to='/main'  style={{ textDecoration: 'none' }} >Meny</Link>
+          <Link className={`header-link ${pathname==='/order'? 'header-link-active':'' }`} to='/order' >Beställa</Link>
         </div>
         <div>
-          <Link className= {`header-link ${pathname==='/omoss'? 'header-link-active':'' }`} to='/omoss'  style={{ textDecoration: 'none' }}>Om Oss</Link>
+          <Link className= {`header-link ${pathname==='/kontakt'? 'header-link-active':'' }`} to='/kontakt'  >Kontakt</Link>  
         </div>
-        <div>
-          <Link className= {`header-link ${pathname==='/kontakt'? 'header-link-active':'' }`} to='/kontakt'  style={{ textDecoration: 'none' }}>Kontakt</Link>  
-      </div>   
     </div>
   </header>
 }

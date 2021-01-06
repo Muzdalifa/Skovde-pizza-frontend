@@ -12,6 +12,9 @@
   font-size: 1.2rem;
   line-height: 2rem;
 }
+.menu-navLink:hover {
+  color: #f3c9a7;
+}
 .menu-selected-item {
   /* color: #eb7311; */
   color: #f3c9a7;

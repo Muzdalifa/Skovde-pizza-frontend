@@ -1,7 +1,6 @@
 header {
   background-color: rgb(17, 93, 95);
   color: white;
-  margin: 1rem;
   position: relative;
   /* display: grid;
   grid-template-columns: 40% auto; */
@@ -17,6 +16,9 @@ h3 {
   place-content: flex-end;
   background-color: #ff6347de;
   gap: 25px;
+}
+.header-link {
+  text-decoration: none;
 }
 .header-link:visited {
   color: inherit;

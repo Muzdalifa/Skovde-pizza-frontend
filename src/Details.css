@@ -25,7 +25,7 @@
 img {
   height: 16rem;
 }
-.details-add-order-btn {
+.details-add-orderbtn {
   height: 2rem;
   width: 12rem;
   border: white;
@@ -36,7 +36,7 @@ img {
   font-weight: bolder;
   font-size: 1rem;
 }
-.addOrderBtn:hover {
+.details-add-orderbtn:hover {
   /* background-color: rgb(142, 193, 230); */
   cursor: pointer;
   background-color: rgb(17, 93, 95);

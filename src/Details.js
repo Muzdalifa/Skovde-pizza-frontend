@@ -19,7 +19,7 @@ const Details = (props)=>{
                 </div>
               <label>{props.selectedItem.name}</label>
               <label>{props.selectedItem.cost}:-</label>
-              <button onClick={()=>props.addOrderdItem(props.selectedItem) } className='details-add-order-btn'>Lägg</button>
+              <button onClick={()=>props.addOrderdItem(props.selectedItem) } className='details-add-orderbtn'>Lägg</button>
             </div>
             <div className='details-recommendation-title'>Tillval</div >
             <div className='details-recommendations'>        
