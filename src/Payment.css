@@ -1,4 +1,4 @@
-input[type="text"] {
+form.form-container input[type="text"] {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -10,7 +10,7 @@ input[type="text"] {
   outline: none;
 }
 
-input[type="text"]:focus {
+form.form-container input[type="text"]:focus {
   border: 3px solid #555;
 }
 .form-container {
