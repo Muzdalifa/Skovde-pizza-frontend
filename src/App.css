@@ -1,3 +1,8 @@
 .app-container {
-  margin: 0rem 8rem;
+}
+.app-body {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  min-height: calc(100vh - 144px);
+  display: inline-grid;
 }

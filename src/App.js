@@ -21,23 +21,25 @@ const App = () => {
   <Router>
     <div className='app-container'>
       <Header />
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='/order'>
-          <Order />
-        </Route>
-        <Route path='/payment'>
-          <Payment />
-        </Route>
-        <Route path='/kontakt'>
-          <Contact />
-        </Route>
-        <Route path='*'>
-          <Error />
-        </Route>
-      </Switch> 
+      <div className='app-body'>
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/order'>
+            <Order />
+          </Route>
+          <Route path='/payment'>
+            <Payment />
+          </Route>
+          <Route path='/kontakt'>
+            <Contact />
+          </Route>
+          <Route path='*'>
+            <Error />
+          </Route>
+        </Switch> 
+      </div>
       <Footer/>      
     </div>
   </Router>

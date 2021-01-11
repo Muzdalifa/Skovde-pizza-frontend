@@ -1,19 +1,43 @@
 .home-main-content {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  /* gap: 6rem; */
   letter-spacing: 0.01em;
   text-align: justify;
   line-height: 1.4em;
   font-size: 1.2em;
-  margin: 1rem 0rem;
 }
 .home-image {
-  height: 800px;
-  width: 1200px;
-  padding: 0;
-  vertical-align: middle;
+  height: 98%;
+  width: 60%;
+  margin: auto;
 }
+.home-left-div {
+  margin: 8rem;
+  margin-right: 0rem;
+}
+.home-left-div > h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  padding-bottom: 1rem;
+}
+
 .home-info {
-  padding-top: 20rem;
+  padding-bottom: 4rem;
+}
+.home-open-time {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.home-open-day {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.home-open-hour {
+  display: flex;
+  flex-direction: column;
 }
