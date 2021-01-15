@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header"
+import Navigation from "./components/Navigation"
 import "./Body.css"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -9,13 +10,7 @@ const Body = () =>{
     <Router>
       
       <Header />
-      {/* <!-- Navigation Bar --> */}
-      <div className="navbar">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-      </div>
+      <Navigation />
 
       {/* <!-- The flexible grid (content) --> */}
       <div className="row">
