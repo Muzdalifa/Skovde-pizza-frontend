@@ -1,8 +1,5 @@
 .app-container {
+  display: flex;
+  flex-direction: column;
 }
-.app-body {
-  margin-left: 8rem;
-  margin-right: 8rem;
-  min-height: calc(100vh - 144px);
-  display: inline-grid;
-}
+

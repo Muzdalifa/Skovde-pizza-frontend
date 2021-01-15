@@ -1,13 +1,14 @@
 header {
-  background-color: rgb(17, 93, 95);
-  color: white;
   position: relative;
-  /* display: grid;
-  grid-template-columns: 40% auto; */
+  display: flex;
+  flex-direction: column;
+  height: 116px;
 }
 h3 {
+  color: white;
   font-size: 4rem;
   padding-left: 1rem;
+  background-color: rgb(17, 93, 95);
 }
 .header-nav {
   padding-right: 1rem;
@@ -16,18 +17,18 @@ h3 {
   place-content: flex-end;
   background-color: #ff6347de;
   gap: 25px;
+  align-items: center;
+  color: rgb(17, 93, 95);
 }
 .header-link {
   text-decoration: none;
-}
-.header-link:visited {
-  color: inherit;
+  color: rgb(17, 93, 95) !important;
 }
 .header-link:hover {
-  color: bisque;
+  color: bisque !important;
   text-decoration: underline !important;
 }
 
 .header-link-active {
-  color: rgb(17, 93, 95) !important;
+  color: bisque !important;
 }

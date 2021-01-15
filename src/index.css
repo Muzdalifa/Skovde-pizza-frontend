@@ -7,3 +7,138 @@ body {
   color: rgb(17, 93, 95);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+button {
+  height: 2rem;
+  border: white;
+  background-color: rgb(17 93 95 / 70%);
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(17, 93, 95);
+  color: white;
+  border: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*for ipad*/
+@media screen and (max-width: 768px) {
+  .app-body {
+    margin: 2rem 2rem;
+    min-height: calc(100vh - 236px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .home-main-content {
+    flex-direction: column;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    gap: 50px;
+    margin: 1rem;
+  }
+  .home-div-before-image {
+    width: 400px;
+    height: 400px;
+  }
+  .home-image {
+    width: 500px;
+    height: 300px;
+    left: 50px;
+    top: 50px;
+  }
+  .home-right-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0rem;
+  }
+  .home-info {
+    padding-bottom: 25px;
+  }
+  /*menu and order page*/
+  .main-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  /*menu*/
+  menu-lefNav {
+  /* width: 25%; */
+  background-color: rgb(87, 137, 139);
+  color: white;
+  padding: 1rem;
+  padding-top: 0.2rem;
+  text-align: justify;
+  flex:1
+}
+.menu-navLink {
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.menu-navLink:hover {
+  color: #f3c9a7;
+}
+.menu-selected-item {
+  /* color: #eb7311; */
+  color: #f3c9a7;
+}
+h4 {
+  text-align: center;
+  font-size: 1.4em;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+}
+
+
+  /*contact page*/
+}
+
+/*styling for laptop*/
+@media screen and (min-width: 769px) and (max-width: 2000px) {
+  header {
+    height: 110px;
+  }
+  .app-body {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    min-height: calc(100vh - 230px);
+    display: inline-grid;
+    align-content: center;
+  }
+  /*home page*/
+  .home-div-before-image {
+    background-color: #ff6347a1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 500px;
+  }
+  .home-image {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    left: 50px;
+    top: 50px;
+  }
+  /*menu and order page*/
+
+  /*contact page*/
+}
+/*styling for large screen*/
+@media screen and (min-width: 2000px) {
+  .app-body {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    min-height: calc(100vh - 236px);
+    display: inline-grid;
+  }
+}

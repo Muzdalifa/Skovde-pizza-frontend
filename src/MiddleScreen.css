@@ -1,13 +1,20 @@
+/*for ipad*/
+.app-body {
+  margin-top: 1rem;
+  min-height: calc(100vh - 236px);
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .home-main-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   letter-spacing: 0.01em;
   text-align: justify;
-  line-height: 1.8em;
-  font-size: 1.4em;
-  /* height: 100%; */
+  line-height: 1.4em;
+  font-size: 1.2em;
   margin: auto;
+  gap: 25px;
 }
 .home-left-div {
   flex: 1;
@@ -17,21 +24,22 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 600px;
-  height: 700px;
+  width: 400px;
+  height: 400px;
 }
 .home-image {
-  width: 800px;
-  height: 600px;
+  width: 500px;
+  height: 300px;
   margin: auto;
   position: relative;
-  left: 60px;
+  left: 50px;
   top: 50px;
 }
 .home-right-div {
-  margin-right: 0rem;
   flex: 1;
-  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .home-right-div > h1,
 h2 {
@@ -39,7 +47,7 @@ h2 {
   padding: 1rem;
 }
 .home-info {
-  padding-bottom: 4rem;
+  padding-bottom: 25px;
 }
 b {
   text-shadow: rgb(132, 138, 138);
@@ -60,12 +68,9 @@ b {
   display: flex;
   flex-direction: column;
 }
-.home-button {
-  align-self: center;
-}
 .home-orderbtn {
   height: 2rem;
-  width: 12rem;
+  width: 8rem;
   border: white;
   background-color: rgb(17 93 95 / 70%);
   color: white;
