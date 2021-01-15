@@ -12,9 +12,6 @@ import Payment from './Payment'
 import Contact from './Contact'
 
 
-
-
-
 const App = () => {
 
   return (      
