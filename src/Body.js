@@ -1,16 +1,14 @@
-import React from 'react';
-import Footer from './components/Footer';
-import './Body.css'
+import React from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header"
+import "./Body.css"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 const Body = () =>{
   return (
     <Router>
-      {/* <!-- Header --> */}
-      <div className="header">
-        <h1>Skövde Pizza</h1>
-      </div>
-
+      
+      <Header />
       {/* <!-- Navigation Bar --> */}
       <div className="navbar">
         <a href="#">Link</a>
@@ -40,7 +38,6 @@ const Body = () =>{
           </p>
         </div>
       </div>
-
       <Footer />
     </Router>
   )
