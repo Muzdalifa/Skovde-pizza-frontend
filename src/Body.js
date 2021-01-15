@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/Footer';
 import './Body.css'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -40,10 +41,7 @@ const Body = () =>{
         </div>
       </div>
 
-      {/* <!-- Footer --> */}
-      <div className="footer">
-        <h2>Created by Muzdalifa Ali</h2>
-      </div>
+      <Footer />
     </Router>
   )
 }
