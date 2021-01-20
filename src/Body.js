@@ -4,6 +4,9 @@ import Header from "./components/Header"
 import Navigation from "./components/Navigation"
 import "./Body.css"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import HomePage from "./components/HomePage";
+import OrderPage from "./components/OrderPage";
+import ContactPage from "./components/ContactPage";
 
 const Body = () =>{
   return (
@@ -11,28 +14,23 @@ const Body = () =>{
       
       <Header />
       <Navigation />
-
-      {/* <!-- The flexible grid (content) --> */}
-      <div className="row">
-        <div className="side">
-          <h2></h2>
-          <h5></h5>
-          <div className="fakeimg" style={{height:200}}>Image</div>
-        </div>
-        <div className="main">
-          <h2>TITLE HEADING</h2>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <br/>
-          <h2>TITLE HEADING</h2>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-        </div>
-      </div>
+      <Switch>
+          <Route exact path='/'>
+            <HomePage />
+          </Route>
+          <Route path='/order'>
+            <OrderPage />
+          </Route>
+          {/* <Route path='/payment'>
+            <Payment />
+          </Route> */}
+          <Route path='/kontakt'>
+            <ContactPage />
+          </Route>
+          {/* <Route path='*'>
+            <Error />
+          </Route> */}
+        </Switch> 
       <Footer />
     </Router>
   )
