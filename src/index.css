@@ -68,34 +68,33 @@ button:hover {
   }
   /*menu*/
   menu-lefNav {
-  /* width: 25%; */
-  background-color: rgb(87, 137, 139);
-  color: white;
-  padding: 1rem;
-  padding-top: 0.2rem;
-  text-align: justify;
-  flex:1
-}
-.menu-navLink {
-  cursor: pointer;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-.menu-navLink:hover {
-  color: #f3c9a7;
-}
-.menu-selected-item {
-  /* color: #eb7311; */
-  color: #f3c9a7;
-}
-h4 {
-  text-align: center;
-  font-size: 1.4em;
-  letter-spacing: 0.01em;
-  line-height: 1.8;
-}
-
+    /* width: 25%; */
+    background-color: rgb(87, 137, 139);
+    color: white;
+    padding: 1rem;
+    padding-top: 0.2rem;
+    text-align: justify;
+    flex: 1;
+  }
+  .menu-navLink {
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .menu-navLink:hover {
+    color: #f3c9a7;
+  }
+  .menu-selected-item {
+    /* color: #eb7311; */
+    color: #f3c9a7;
+  }
+  h4 {
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 0.01em;
+    line-height: 1.8;
+  }
 
   /*contact page*/
 }
