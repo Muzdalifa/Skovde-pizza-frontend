@@ -1,0 +1,52 @@
+/* Create two equal columns that sits next to each other */
+/* left column */
+.homepage-left-side {
+  flex: 50%;
+  background-color: #f1f1f1;
+  /* padding: 20px; */
+}
+.home-div-image{
+height: inherit;
+}
+.home-div-before-image {
+  background-color: #ff6347a1;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70%;
+  /* width: 600px;
+  height: 700px; */
+}
+.home-image {
+  /* width: 800px;
+  height: 600px; */
+  /* width: 100%; */
+  margin: auto;
+  position: relative;
+  left: 30px;
+  top: 50px;
+}
+/* right column */
+.homepage-right-side {
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+.homepage-button {
+  align-self: center;
+}
+.homepage-open-time {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.homepage-open-day {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.homepage-open-hour {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
