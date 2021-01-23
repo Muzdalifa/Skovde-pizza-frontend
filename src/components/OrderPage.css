@@ -7,4 +7,19 @@
   .side {
     padding: 0px;
   }
+  .orderPage-container {
+    font-family: Arial;
+    margin: 0;
+    letter-spacing: 0.001em;
+    text-align: justify;
+    line-height: 0.6em;
+    font-size: 0.8em;
+  }
+  .menu-navLink {
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    line-height: 0.6rem;
+    padding: 0.8rem;
+  }
 }

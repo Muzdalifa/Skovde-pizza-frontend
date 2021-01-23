@@ -42,7 +42,7 @@ const OrderPage = () =>{
   const detailsProps = { selectedItem, addOrderdItem }
   const orderdItemsProps = {orderdItems,setOrderdItems,removeOrderdItem,addOrderdItem}
   
-  return <div className="row">
+  return <div className="row orderPage-container">
     <div className="side">
       <Menu { ...menuProps}   />
     </div>

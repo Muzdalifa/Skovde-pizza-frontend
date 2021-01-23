@@ -12,7 +12,9 @@
 
 /*pizza div  */
 .details-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem 1rem 2rem 1rem;
 }
 .details-image-info {
@@ -31,7 +33,7 @@
 }
 
 .details-add-orderbtn {
-  width: 12rem;
+  width: 8rem;
   margin-top: 0;
 }
 .details-recommendation-title {
@@ -71,22 +73,26 @@
   .details-default-img-div {
     display: none;
   }
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .details-image-info {
     flex-direction: column;
     flex: 1;
     gap: 10px;
   }
   .side {
-    padding: 0px;
     padding-top: 1rem;
   }
   .details-image {
-    /* width: 50%; */
     height: 100%;
     margin: auto;
   }
-  .details-container {
-    padding: 0rem;
+  .details-orderlist {
+    padding: 1rem;
     margin: auto;
   }
   .details-recommendations {
@@ -96,9 +102,27 @@
   }
   .details-recommended-item {
     padding: 0rem;
+    letter-spacing: 0em;
+    justify-content: center;
+    text-align: justify;
+    line-height: inherit;
+    font-size: 0.6em;
   }
   .details-rekommend-image {
     height: 3rem;
     width: 3rem;
+  }
+  .details-recommended-item p {
+    margin: 0rem;
+  }
+  .details-add-recommendation-btn {
+    height: 1.4rem;
+    font-weight: 8rem;
+    width: 1.2rem;
+    text-align: center;
+  }
+  .order-item-right-nav-up {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
