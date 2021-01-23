@@ -7,11 +7,8 @@ const HomePage = () =>{
 
   return <div className="row">
     <div className="homepage-left-side">
-      {/* <div className="home-div-before-image"> */}
-        {/* <img className="fakeimg"  src='../asset/logo/home_page_img.jpg' ></img> */}
-      {/* </div> */}
-      <div className="fakeimg home-div-image" >
-        <img className="fakeimg"  src='../asset/logo/home_page_img.jpg' ></img>
+      <div className=" fakeimg " >
+        <img className=" fakeimg " src='../asset/logo/home_page_img.jpg' ></img>
       </div>
     </div>
     <div className="homepage-right-side">
