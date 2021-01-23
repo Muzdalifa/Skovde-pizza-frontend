@@ -1,0 +1,104 @@
+/* all middle content */
+.details-orderlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  letter-spacing: 0.01em;
+  text-align: justify;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  /* padding: 1rem; */
+}
+
+/*pizza div  */
+.details-container {
+  display: grid;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.details-image-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.details-image {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+.details-front-img {
+  width: 100%;
+  height: fit-content;
+}
+
+.details-add-orderbtn {
+  width: 12rem;
+  margin-top: 0;
+}
+.details-recommendation-title {
+  padding: 1rem 2rem 0rem 1rem;
+  font-weight: 900;
+}
+.details-recommendations {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: start;
+  /* padding: 1rem 2rem 0rem 1rem; */
+}
+.details-recommended-item {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: small;
+}
+.details-rekommend-image {
+  height: 4rem;
+  width: 4rem;
+}
+.details-add-recommendation-btn {
+  font-weight: 20rem;
+  font-size: initial;
+  font-weight: 800;
+  width: 1.4rem;
+  margin-top: 0;
+}
+.details-before-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 24rem;
+}
+
+@media screen and (max-width: 700px) {
+  .details-default-img-div {
+    display: none;
+  }
+  .details-image-info {
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+  }
+  .side {
+    padding: 0px;
+    padding-top: 1rem;
+  }
+  .details-image {
+    /* width: 50%; */
+    height: 100%;
+    margin: auto;
+  }
+  .details-container {
+    padding: 0rem;
+    margin: auto;
+  }
+  .details-recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .details-recommended-item {
+    padding: 0rem;
+  }
+  .details-rekommend-image {
+    height: 3rem;
+    width: 3rem;
+  }
+}

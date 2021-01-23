@@ -1,0 +1,63 @@
+.order-item-right-nav {
+  background-color: #f5e2ce7a;
+  padding: 1rem;
+}
+.order-item-right-nav > h4 {
+  text-align: center;
+  font-size: 1.4em;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+}
+.order-item-right-nav-up {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  padding: 0.5rem;
+  letter-spacing: 0.01em;
+  text-align: justify;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+.order-item-labelbtn {
+  cursor: pointer;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.order-item-labelbtn:hover {
+  color: #eb7311;
+  /* font-size: 2rem; */
+  font-weight: bold;
+  padding: 0.4rem;
+}
+.order-item-count-item {
+  border: solid 1px;
+  padding: 0.2rem 0.4rem;
+}
+.order-item-order-count {
+  padding: 1;
+}
+.order-item-removebtn {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-top: 0rem;
+}
+.order-item-hidden {
+  visibility: hidden;
+}
+.order-item-numericcell {
+  text-align: end;
+}
+.order-item-right-nav-total-payment {
+  border-top: solid 1px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.order-item-right-nav-down {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.order-item-buy-btn {
+  height: 1.8rem;
+  margin-top: 0rem;
+}
