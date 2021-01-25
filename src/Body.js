@@ -6,6 +6,7 @@ import "./Body.css"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import HomePage from "./components/HomePage";
 import OrderPage from "./components/OrderPage";
+import Payment from "./components/Payment"
 import ContactPage from "./components/ContactPage";
 
 const Body = () =>{
@@ -21,9 +22,9 @@ const Body = () =>{
           <Route path='/order'>
             <OrderPage />
           </Route>
-          {/* <Route path='/payment'>
+          <Route path='/payment'>
             <Payment />
-          </Route> */}
+          </Route>
           <Route path='/kontakt'>
             <ContactPage />
           </Route>
