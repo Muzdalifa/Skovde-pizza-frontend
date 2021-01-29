@@ -1,5 +1,5 @@
 import React from 'react';
-import rekommendation_data from './rekommendation'
+import rekommendation_data from '../rekommendation'
 import './Details.css'
 
 const Details = (props)=>{
