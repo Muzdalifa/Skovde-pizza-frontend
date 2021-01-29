@@ -2,6 +2,7 @@
   flex-direction: column;
   margin-right: 2rem;
   margin-left: 2rem;
+  padding: 1rem;
 }
 .payment-order-number {
   letter-spacing: 0.01em;
@@ -30,6 +31,10 @@ form.form-container input[type="text"]:focus {
 .form-container {
   /* margin: 2rem; */
   flex-grow: 1;
+}
+.payment-order-number-checked {
+  text-align: center;
+  font-size: 3rem;
 }
 .payment-item {
   flex-grow: 1;
@@ -68,5 +73,9 @@ form.form-container input[type="text"]:focus {
   .payment-info {
     flex-direction: column;
     gap: 20px;
+  }
+  .payment-order-number-checked {
+    text-align: center;
+    font-size: 2rem;
   }
 }

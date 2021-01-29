@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Payment.css'
 
 import { useLocation } from 'react-router';
@@ -26,9 +26,10 @@ const checkout = async(orderNumber, cost)=>{
   const session = await response.json();
   // When the customer clicks on the button, redirect them to Checkout.
   const result = await stripe.redirectToCheckout(session);
+}
 
-
-
+const onRadioChange = (e) =>{
+  console.log(e.target.value)
 }
 
 const Payment = ()=>{
@@ -36,22 +37,36 @@ const Payment = ()=>{
   const {state} = useLocation();
   console.log(state.orderItems);
 
+  const [selfPickup, setSelfPickup] = useState(true);
+
   return <div className="row payment-container">
     <label className="payment-order-number">Order number <b>:</b> {state.orderNum}</label>
-    <label for="restaurant">
-      <input type="radio" id="restaurant" />Hämta själv
-    </label>
-    <label for="hem">
-      <input type="radio" id="hem" />Hemleverans
-    </label>
-    <div className='payment-info'>
-      <form className='form-container'>
-        <fieldset>
-          <legend>Vill du ta med?:</legend>
-          <input type ='text' placeholder='Mobil Number'></input>
-          <input type ='text' placeholder='Address'></input>
-        </fieldset>
-      </form>
+    <div className="payment-take-choice">
+      <label for="restaurant">
+        <input type="radio" checked={selfPickup} onClick={()=>setSelfPickup(true)}/>Hämta själv
+      </label><br />
+      <label for="hem">
+        <input type="radio" checked={!selfPickup} onClick={()=>setSelfPickup(false)}/>Hemleverans
+      </label>
+      </div>
+      <div className='payment-info'>
+        {
+          selfPickup
+          ? <form className='form-container'>
+              <fieldset>
+                <legend>Vänligen reservera ditt beställningsnummer</legend>
+                <h1 className="payment-order-number-checked">{state.orderNum}</h1>
+              </fieldset>
+            </form>          
+          : <form className='form-container'>
+              <fieldset>
+                <legend>Vänligen ge oss din information så att vi kan nå dig</legend>
+                <input type ='text' placeholder='Mobil Number' ></input>
+                <input type ='text' placeholder='Address' ></input>
+              </fieldset>
+            </form> 
+        }
+
       <div className='payment-item'>
         <h4>Köpta produkter</h4>
         {
@@ -70,7 +85,7 @@ const Payment = ()=>{
         </div> 
         
         <div className="payment-btn">
-          <button className=" payment-backbtn" id="checkout-button" onClick={()=> history.push('/order') }>Back</button>
+          <button className=" payment-backbtn" id="checkout-button" onClick={()=> history.push('/order') }>Tillbaka</button>
           <button className=" payment-paybtn" id="checkout-button" onClick={()=> checkout(state.orderNum.toString(), state.cost)}>Betala</button>
         </div>
       </div>
