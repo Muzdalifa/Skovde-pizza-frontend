@@ -17,3 +17,8 @@
   background-color: #ddd;
   color: black;
 }
+/* Change color on active */
+.navbar a:active {
+  background-color: #ddd;
+  color: black;
+}

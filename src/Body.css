@@ -35,7 +35,6 @@ body {
 
 /* Fake image, just for this example */
 .fakeimg {
-  /* background-color: #aaa; */
   width: 100%;
   padding: 20px;
 }
@@ -43,11 +42,11 @@ button {
   height: 2rem;
   width: 8rem;
   border: white;
-  background-color: rgb(20 112 94 / 96%);
+  background-color: #1abc9c; /*rgb(20 112 94 / 96%);*/
   color: white;
   font-weight: bolder;
   font-size: 1rem;
-  margin-top: 4rem;
+
 }
 button:hover {
   cursor: pointer;

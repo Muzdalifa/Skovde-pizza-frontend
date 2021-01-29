@@ -52,17 +52,9 @@ textarea:focus {
   flex-grow: 1;
 }
 .contact-button {
-  height: 2rem;
   width: 12rem;
-  border: white;
-  background-color: rgb(17 93 95 / 70%);
-  color: white;
-  font-weight: bolder;
-  font-size: 1rem;
 }
 .map {
-  /* width: 4000; */
-  /* height: 1000; */
   border: 0;
   align-items: center;
 }

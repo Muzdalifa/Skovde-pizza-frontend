@@ -37,7 +37,7 @@ const Details = (props)=>{
           </>
         : <div className="details-default-img-div">
             <img src='./asset/logo/4.jpg' className='details-front-image'></img>
-            <p>Välkomen till Skövde pizza! Du kan vänligen välja din favoritpizza från pizzamenyn till vänster.  </p>
+            <p className="details-default-p">Välkomen till Skövde pizza! Du kan vänligen välja din favoritpizza från pizzamenyn till vänster.  </p>
           </div>
       } 
     </div>

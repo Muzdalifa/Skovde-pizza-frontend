@@ -22,6 +22,7 @@
 }
 .homepage-button {
   align-self: center;
+  margin-top: 4rem;
 }
 .homepage-open-time {
   display: flex;

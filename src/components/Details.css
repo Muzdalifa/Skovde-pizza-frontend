@@ -7,7 +7,7 @@
   text-align: justify;
   line-height: 1.4em;
   font-size: 1.2em;
-  /* padding: 1rem; */
+  background: white;
 }
 
 /*pizza div  */
@@ -67,6 +67,10 @@
   margin-left: auto;
   margin-right: auto;
   height: 24rem;
+}
+.details-default-p {
+  padding: 1rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {

@@ -12,7 +12,8 @@ const OrderdItem = (props)=>{
     return accumulator + currentOrderdItemInfo.item.cost * currentOrderdItemInfo.count
    } 
 
-   const orderNum = 1000001;
+   //get order number
+   const orderNum = new Date().getTime().toString().slice(-7);
  
   return <div className='order-item-right-nav'>
     <h4>Köpta produkter</h4>
