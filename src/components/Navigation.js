@@ -9,6 +9,7 @@ const Navigation = () =>{
           <Link className= {`header-link ${pathname==='/'? 'header-link-active':'' }`} to='/' >Hem </Link>
           <Link className={`header-link ${pathname==='/order'? 'header-link-active':'' }`} to='/order' >Beställa</Link>
           <Link className= {`header-link ${pathname==='/kontakt'? 'header-link-active':'' }`} to='/kontakt'  >Kontakt</Link>  
+          <Link className= {`header-link ${pathname==='/login'? 'header-link-active':'' }`} to='/login'  >Logga in</Link> 
       </div>
 }
 export default Navigation;

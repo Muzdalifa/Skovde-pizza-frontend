@@ -28,6 +28,9 @@ const Body = () =>{
           <Route path='/kontakt'>
             <ContactPage />
           </Route>
+          {/* <Route path='/login'>
+            <LoginPage />
+          </Route> */}
           {/* <Route path='*'>
             <Error />
           </Route> */}
