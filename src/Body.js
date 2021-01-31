@@ -8,7 +8,7 @@ import HomePage from "./components/HomePage";
 import OrderPage from "./components/OrderPage";
 import Payment from "./components/Payment"
 import ContactPage from "./components/ContactPage";
-import LoginPage from "./components/LoginPage";
+import AdminPage from "./components/AdminPage";
 
 
 const Body = () =>{
@@ -30,8 +30,8 @@ const Body = () =>{
           <Route path='/kontakt'>
             <ContactPage />
           </Route>
-          <Route path='/login'>
-            <LoginPage />
+          <Route path='/admin'>
+            <AdminPage />
           </Route>
           {/* <Route path='*'>
             <Error />
