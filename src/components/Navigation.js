@@ -17,7 +17,7 @@ const Navigation = () =>{
           <Link className= {`header-link ${pathname==='/kontakt'? 'header-link-active':'' }`} to='/kontakt'  >Kontakt</Link>  
           { location.pathname == "/admin"
           ? <Link className= {`header-link ${pathname==='/login'? 'header-link-active':'' }`}  onClick={() => logout()}  >Logga ut</Link> 
-          : <Link className= {`header-link ${pathname==='/login'? 'header-link-active':'' }`}  onClick={() => loginWithRedirect()}  >Logga in</Link> 
+        : <Link className= {`header-link ${pathname==='/login'? 'header-link-active':'' }`}  onClick={() => loginWithRedirect({redirectUri:`${window.location.origin}/admin`})}  >Logga in</Link> 
         }
       </div>
 }

@@ -13,7 +13,7 @@ const checkout = async(orderNumber, cost)=>{
   const stripe = await stripePromise;
   // Call backend to create the Checkout Session
   const response = await fetch(
-    "https://localhost:44375/api/Payments",
+    "api/Payments",
     { 
       method:"post", 
       body: JSON.stringify({orderNumber, cost}),
@@ -40,7 +40,7 @@ const Payment = ()=>{
   const [selfPickup, setSelfPickup] = useState(true);
 
   return <div className="row payment-container">
-    <label className="payment-order-number">Order number <b>:</b> {state.orderNum}</label>
+    <label className="payment-order-number">Beställningsnummer <b>:</b> {state.orderNum}</label>
     <div className="payment-take-choice">
       <label for="restaurant">
         <input type="radio" checked={selfPickup} onClick={()=>setSelfPickup(true)}/>Hämta själv

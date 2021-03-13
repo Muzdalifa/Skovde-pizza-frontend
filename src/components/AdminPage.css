@@ -1,0 +1,40 @@
+.container {
+  flex-direction: column;
+}
+p {
+  padding-left: 1rem;
+  font-family: 2rem;
+}
+table,
+.admin-form-container {
+  width: 60%;
+  margin: 1rem auto 1rem auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+tr {
+  padding: auto;
+  text-align: center;
+}
+th {
+  background-color: #0f2521a1; /*#1abc9c; */
+  border: none;
+  color: white;
+}
+#tr:nth-child(odd) {
+  background-color: #fff;
+}
+.add-btn,
+.clear-btn {
+  width: 7rem;
+}
+.admin-form-container {
+  display: flex;
+  justify-content: space-evenly;
+}
