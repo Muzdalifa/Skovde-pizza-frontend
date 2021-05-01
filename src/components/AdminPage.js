@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react"
 import "./AdminPage.css"
 
-
 const AdminPage = ()=>{
    //
    const uploadedFile = (e)=>{

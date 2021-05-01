@@ -1,13 +1,24 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Menu from './Menu';
 import OrderdItem from './OrderdItem';
 import Details from './Details';
-import data from '../data';
+//import data from '../data';
 import "./OrderPage.css"
 
 const OrderPage = () =>{
+  const [data, setData] = useState([]);
+  
   const [selectedItem, setSelectedItem] = useState({id: '',image:'',name:'', Time:''});
   const [orderdItems, setOrderdItems] = useState([]); //array of object(item, count)
+
+  useEffect(()=>{
+    const getData = async ()=>{
+     const response = await fetch("/api/items")
+     const dataFromDb = await response.json();
+     setData(dataFromDb) 
+    }
+    getData();
+  },[])
 
   const addOrderdItem=(item)=>{
     //check if exist
