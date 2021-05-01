@@ -2,6 +2,7 @@
   "name": "order-remainder",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://localhost:44375",
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
     "@stripe/stripe-js": "^1.11.0",

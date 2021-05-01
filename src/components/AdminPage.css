@@ -14,7 +14,7 @@ table,
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #0f252187;
   border-collapse: collapse;
 }
 th,
@@ -27,6 +27,9 @@ th {
   border: none;
   color: white;
 }
+tr {
+  color: #0f2521e6;
+}
 #tr:nth-child(odd) {
   background-color: #fff;
 }
@@ -37,4 +40,38 @@ th {
 .admin-form-container {
   display: flex;
   justify-content: space-evenly;
+}
+/* input#file-upload-button {
+  background-color: aquamarine !important;
+} */
+input[type="file"] {
+  /* display: none; */
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  height: 2rem;
+  width: 8rem;
+  border: white;
+  background-color: #1abc9c; /*rgb(20 112 94 / 96%);*/
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.custom-file-upload:hover {
+  cursor: pointer;
+  background-color: rgb(17, 93, 95);
+  color: white;
+  border: white;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+}
+.delete-item{
+  font-size: large;
+  color: rgb(228, 72, 72);
+}
+.delete-item:hover{
+  font-size: x-large;
+  color: rgb(145, 5, 5);
+  cursor: pointer;
 }
