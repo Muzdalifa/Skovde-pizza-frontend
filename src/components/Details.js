@@ -12,7 +12,7 @@ const Details = (props)=>{
           <>
             <div className='details-container'>
               <div className='details-image-info'>
-                <img className="details-image" src={props.selectedItem.image} />
+                <img className="details-image" src={`./static/images/${props.selectedItem.imagePath}`}/>
                 {/* <p>Mozzarella, Fontina, Parmesan, Feta cheese, Mushrooms, Bell peppers,
                    Italian pepperoncini, sausage, black olives, Chopped fresh basil. 
                    Baby arugula, Pesto, Pepperoni, Onions or caramelized, Ham</p> */}

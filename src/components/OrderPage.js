@@ -7,8 +7,8 @@ import "./OrderPage.css"
 
 const OrderPage = () =>{
   const [data, setData] = useState([]);
-  
-  const [selectedItem, setSelectedItem] = useState({id: '',image:'',name:'', Time:''});
+
+  const [selectedItem, setSelectedItem] = useState({id: '', imagePath:'',name:'', Time:''});
   const [orderdItems, setOrderdItems] = useState([]); //array of object(item, count)
 
   useEffect(()=>{
