@@ -93,7 +93,7 @@ const AdminPage = ()=>{
                <td>{item.name}</td>
                <td>{item.cost}</td>
                <td>{item.discount}</td>
-               <td><img src={`./static/images/${item.imagePath}`} ></img></td> 
+               <td><img src={`./static/images/${item.imagePath}`} style={{heigth:25, width:25, padding:"auto"}}  ></img></td> 
                <td className="delete-item" onClick={()=>deleteItem(item.id)}>X</td>              
             </tr>
             )            
